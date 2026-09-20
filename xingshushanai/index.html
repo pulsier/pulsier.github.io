@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="杏树纱奈作品集收录与详细介绍，包含热门漫画、插画风格解析及阅读指南。">
+    <meta name="keywords" content="杏树纱奈作品, 杏树纱奈漫画, 杏树纱奈插画, 杏树纱奈作品集">
+    <title>杏树纱奈作品-精选漫画与插画作品集收录指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8d6e63;
+            --secondary-color: #d7ccc8;
+            --accent-color: #ffab91;
+            --text-main: #3e2723;
+            --text-light: #6d4c41;
+            --bg-body: #fdfbf7;
+            --bg-card: #ffffff;
+            --spacing-unit: 8px;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(62, 39, 35, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #efebe9 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(141, 110, 99, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(141, 110, 99, 0.4);
+            background-color: #795548;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -14px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .view-all {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Works Grid */
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .work-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .work-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 280px;
+            background-color: #eee;
+            object-fit: cover;
+            background-image: url('https://picsum.photos/seed/art1/400/500');
+        }
+
+        .card-content {
+            padding: 16px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .work-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .work-meta {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .work-tags span {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            border-radius: 4px;
+            margin-right: 4px;
+        }
+
+        .read-link {
+            margin-top: auto;
+            display: block;
+            text-align: center;
+            padding: 8px;
+            background-color: var(--secondary-color);
+            color: var(--text-main);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .read-link:hover {
+            background-color: var(--accent-color);
+        }
+
+        /* Character & Style Section */
+        .split-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .style-description h3 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .style-description p {
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+
+        .style-features li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .style-features li::before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3e2723;
+            color: #d7ccc8;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 12px 0;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 16px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .split-section {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">杏树纱奈<span>作品集</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">漫画连载</a></li>
+                    <li><a href="#">插画图集</a></li>
+                    <li><a href="#">关于作者</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>探索杏树纱奈的独特艺术世界</h1>
+                <p>汇集杏树纱奈最具代表性的漫画作品与插画创作，为您呈现细腻的画风与动人的故事。</p>
+                <a href="#featured" class="cta-button">开始阅读</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Featured Works -->
+            <section id="featured">
+                <div class="section-header">
+                    <h2 class="section-title">精选热门作品</h2>
+                    <a href="#" class="view-all">查看全部 &rarr;</a>
+                </div>
+                
+                <div class="works-grid">
+                    <!-- Work Card 1 -->
+                    <article class="work-card">
+                        <div class="card-image" style="background-image: url('https://picsum.photos/seed/ashiba1/400/500');"></div>
+                        <div class="card-content">
+                            <h3 class="work-title">绯红之恋</h3>
+                            <div class="work-meta">
+                                <span>类型：都市言情</span>
+                                <span>更新：连载中</span>
+                            </div>
+                            <div class="work-tags">
+                                <span>#浪漫</span>
+                                <span>#治愈</span>
+                            </div>
+                            <a href="#" class="read-link">阅读详情</a>
+                        </div>
+                    </article>
+
+                    <!-- Work Card 2 -->
+                    <article class="work-card">
+                        <div class="card-image" style="background-image: url('https://picsum.photos/seed/ashiba2/400/500');"></div>
+                        <div class="card-content">
+                            <h3 class="work-title">晨曦微光</h3>
+                            <div class="work-meta">
+                                <span>类型：校园青春</span>
+                                <span>状态：已完结</span>
+                            </div>
+                            <div class="work-tags">
+                                <span>#青春</span>
+                                <span>#成长</span>
+                            </div>
+                            <a href="#" class="read-link">阅读详情</a>
+                        </div>
+                    </article>
+
+                    <!-- Work Card 3 -->
+                    <article class="work-card">
+                        <div class="card-image" style="background-image: url('https://picsum.photos/seed/ashiba3/400/500');"></div>
+                        <div class="card-content">
+                            <h3 class="work-title">幻境游踪</h3>
+                            <div class="work-meta">
+                                <span>类型：奇幻冒险</span>
+                                <span>状态：连载中</span>
+                            </div>
+                            <div class="work-tags">
+                                <span>#奇幻</span>
+                                <span>#冒险</span>
+                            </div>
+                            <a href="#" class="read-link">阅读详情</a>
+                        </div>
+                    </article>
+
+                    <!-- Work Card 4 -->
+                    <article class="work-card">
+                        <div class="card-image" style="background-image: url('https://picsum.photos/seed/ashiba4/400/500');"></div>
+                        <div class="card-content">
+                            <h3 class="work-title">四季物语</h3>
+                            <div class="work-meta">
+                                <span>类型：生活随笔</span>
+                                <span>状态：已完结</span>
+                            </div>
+                            <div class="work-tags">
+                                <span>#生活</span>
+                                <span>#治愈</span>
+                            </div>
+                            <a href="#" class="read-link">阅读详情</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Artist Profile & Style -->
+            <section id="artist" style="background-color: #fff; border-radius: 12px; padding: 40px; margin-bottom: 40px;">
+                <div class="split-section">
+                    <div class="artist-intro">
+                        <img src="https://picsum.photos/seed/artist/600/400" alt="杏树纱奈风格展示" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                    </div>
+                    <div class="style-description">
+                        <h3>关于杏树纱奈</h3>
+                        <p>杏树纱奈以其独特的线条表现力和细腻的情感捕捉而闻名。作品往往聚焦于都市生活中的细微情感，画风温暖而充满故事感，能够迅速将读者带入设定的情境之中。</p>
+                        <h3>艺术风格解析</h3>
+                        <ul class="style-features">
+                            <li>色彩运用柔和，擅长使用暖色调营造温馨氛围。</li>
+                            <li>人物面部表情刻画精准，眼神戏份丰富。</li>
+                            <li>场景构建注重光影变化，增强了画面的立体感。</li>
+                            <li>叙事节奏流畅，分镜设计极具视觉冲击力。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reading Guide / FAQ -->
+            <section id="guide">
+                <div class="section-header">
+                    <h2 class="section-title">阅读指南与常见问题</h2>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <article style="background: var(--bg-card); padding: 24px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 12px;">在哪里可以找到正版作品？</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-light);">建议关注官方授权平台或作者个人社交媒体账号，以支持创作者并获得最新的更新资讯。</p>
+                    </article>
+                    <article style="background: var(--bg-card); padding: 24px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 12px;">作品是否支持多语言？</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-light);">大部分作品以中文为主，部分早期作品可能有日语或英文版本，具体请查看各平台详情页。</p>
+                    </article>
+                    <article style="background: var(--bg-card); padding: 24px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 12px;">如何支持作者？</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-light);">通过官方渠道进行打赏、订阅或购买周边，是对创作者最大的鼓励。</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>杏树纱奈作品集</h4>
+                    <p style="font-size: 0.9rem; color: #a1887f;">致力于收录与分享最优质的漫画与插画作品，为读者提供便捷的阅读体验。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">作品列表</a></li>
+                        <li><a href="#">作者简介</a></li>
+                        <li><a href="#">联系合作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>版权声明</h4>
+                    <ul>
+                        <li><a href="#">免责声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">使用条款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 杏树纱奈作品收录站. All rights reserved. 本站仅用于作品展示与介绍，非官方网站。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
