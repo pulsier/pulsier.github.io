@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="粗口喊麦词大全，提供各类风格强烈的喊麦文案、霸气喊麦台词、情感宣泄型喊麦词，包含网络热梗与原创内容，适合主播与爱好者参考使用。">
+    <meta name="keywords" content="粗口喊麦词,喊麦词,霸气喊麦,网络喊麦,喊麦文案">
+    <title>粗口喊麦词-霸气喊麦文案大全与创作指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e74c3c;
+            --secondary-color: #2c3e50;
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --light-text: #7f8c8d;
+            --border-radius: 8px;
+            --spacing: 20px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Filter Bar */
+        .filter-bar {
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+
+        /* Card Style */
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+
+        .card-header {
+            background: #fdf2f2;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #eee;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .tag.hot { background: #ffebeb; color: #e74c3c; }
+        .tag.new { background: #e8f5e9; color: #2ecc71; }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .card-preview {
+            font-size: 0.9rem;
+            color: var(--light-text);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 4.5em;
+        }
+
+        .card-actions {
+            padding: 15px;
+            border-top: 1px solid #f0f0f0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 8px;
+            text-align: center;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1a252f;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .modal-overlay.open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s;
+        }
+
+        .modal-overlay.open .modal {
+            transform: translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .modal-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .lyrics-content {
+            max-height: 60vh;
+            overflow-y: auto;
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #444;
+            white-space: pre-wrap;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .lyrics-meta {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #888;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Guide Section */
+        .guide-section {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+        }
+
+        .guide-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .guide-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .guide-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .guide-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: #bdc3c7;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            <span>喊麦词库</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#category">分类</a></li>
+                <li><a href="#guide">使用指南</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container">
+        <h1>粗口喊麦词</h1>
+        <p>汇聚全网最硬核、最霸气的喊麦文案，为你的直播间注入灵魂与激情。</p>
+    </div>
+</section>
+
+<main class="container">
+    <!-- Filters -->
+    <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterContent('all')">全部</button>
+        <button class="filter-btn" onclick="filterContent('aggressive')">霸气宣泄</button>
+        <button class="filter-btn" onclick="filterContent('story')">情感故事</button>
+        <button class="filter-btn" onclick="filterContent('freestyle')">即兴Freestyle</button>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="content-grid" id="contentGrid">
+        <!-- Card 1 -->
+        <article class="card" data-category="aggressive">
+            <div class="card-header">
+                <span class="tag hot">热门</span>
+                <span class="tag">霸气</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">铁汉柔情：绝地反击</h3>
+                <div class="card-preview">曾经我也是个无名小卒，在这个弱肉强食的世界里，我学会了沉默，学会了忍耐。但今天，我要让你们知道，愤怒的狮子不会永远沉睡...</div>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="openModal('铁汉柔情：绝地反击', '曾经我也是个无名小卒，在这个弱肉强食的世界里，我学会了沉默，学会了忍耐。但今天，我要让你们知道，愤怒的狮子不会永远沉睡。当我站在这里，你们看到的不再是那个唯唯诺诺的影子，而是一头准备撕裂一切的野兽。不管是嘲讽还是质疑，都将成为我登顶的垫脚石。既然你们选择了站在我的对立面，那就别怪我不念旧情。这一刻，把所有的软弱都丢掉，把所有的尊严都捡起来。铁汉也有柔情，但这柔情只留给值得的人。而对于敌人，只有无情的碾压。')">查看全文</button>
+                <button class="btn btn-outline" onclick="copyText(this)">复制</button>
+            </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-category="story">
+            <div class="card-header">
+                <span class="tag">情感</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">江湖路远，一醉方休</h3>
+                <div class="card-preview">这一路走来，我见过太多的离别，喝过太多的烈酒。有人说江湖险恶，人心难测，但我只信手中的剑，和杯中的酒...</div>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="openModal('江湖路远，一醉方休', '这一路走来，我见过太多的离别，喝过太多的烈酒。有人说江湖险恶，人心难测，但我只信手中的剑，和杯中的酒。管他什么恩怨情仇，到了明天，都不过是过眼云烟。我在这乱世中独来独往，不为了争什么天下第一，只为了不让自己迷失在这茫茫人海。如果你也累了，不妨停下来喝一杯。人生苦短，何必太在意别人的眼光？醉生梦死又何妨，只要醒来时，心依然是热的。')">查看全文</button>
+                <button class="btn btn-outline" onclick="copyText(this)">复制</button>
+            </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" data-category="aggressive">
+            <div class="card-header">
+                <span class="tag hot">热门</span>
+                <span class="tag">宣泄</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">破釜沉舟：决战时刻</h3>
+                <div class="card-preview">既然退路已经被我切断，那就别想再回头。前方是万丈深渊，还是鲜花着锦，我都要亲自走一遭。这把赌注，我全押上了...</div>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="openModal('破釜沉舟：决战时刻', '既然退路已经被我切断，那就别想再回头。前方是万丈深渊，还是鲜花着锦，我都要亲自走一遭。这把赌注，我全押上了。没有什么比绝境更能激发一个人的潜能。当你以为已经到了极限，却发现还有一口气在支撑，那就是奇迹。我不怕失败，我只怕自己没有尽全力去拼搏。哪怕头破血流，我也要为自己拼出一个未来。这一战，不为别的，只为证明我还活着，而且活得精彩！')">查看全文</button>
+                <button class="btn btn-outline" onclick="copyText(this)">复制</button>
+            </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" data-category="freestyle">
+            <div class="card-header">
+                <span class="tag new">新</span>
+                <span class="tag">Freestyle</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">夜色撩人：即兴押韵</h3>
+                <div class="card-preview">夜色太美，让人沉醉。在这个喧嚣的城市里，寻找着那份难得的宁静。不管是鬼哭狼嚎，还是低声吟唱，都是我内心的独白...</div>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="openModal('夜色撩人：即兴押韵', '夜色太美，让人沉醉。在这个喧嚣的城市里，寻找着那份难得的宁静。不管是鬼哭狼嚎，还是低声吟唱，都是我内心的独白。节奏在跳动，血液在燃烧，这一刻，我不需要任何人理解。哪怕只有一分钟，我也要做最真实的自己。在这个光怪陆离的世界里，保持清醒太难，不如跟着节奏摇摆。哪怕明天会怎样，至少今晚，我是自由的。')">查看全文</button>
+                <button class="btn btn-outline" onclick="copyText(this)">复制</button>
+            </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card" data-category="aggressive">
+            <div class="card-header">
+                <span class="tag">硬核</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">独孤求败：巅峰寂寞</h3>
+                <div class="card-preview">站在顶峰的感觉，真的只有自己知道。四周空无一人，只有风在呼啸。我知道，这并不是终点，而是一个新的开始...</div>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="openModal('独孤求败：巅峰寂寞', '站在顶峰的感觉，真的只有自己知道。四周空无一人，只有风在呼啸。我知道，这并不是终点，而是一个新的开始。高处不胜寒，这四个字说得一点都没错。当你拥有了别人无法企及的高度，也就意味着你失去了很多陪伴。但我并不后悔，因为我知道，只有不断攀登，才能看到更广阔的天地。寂寞？或许吧，但这份寂寞，是我用汗水和努力换来的勋章。')">查看全文</button>
+                <button class="btn btn-outline" onclick="copyText(this)">复制</button>
+            </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card" data-category="story">
+            <div class="card-header">
+                <span class="tag">江湖</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">往事如烟：回首往事</h3>
+                <div class="card-preview">回首往事，那些曾经以为过不去的坎，如今都成了故事。那些曾经爱过的人，如今也各奔东西。人生，不过是一场场相遇和离别...</div>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="openModal('往事如烟：回首往事', '回首往事，那些曾经以为过不去的坎，如今都成了故事。那些曾经爱过的人，如今也各奔东西。人生，不过是一场场相遇和离别。我们都在时间的长河里漂泊，试图抓住些什么，却往往两手空空。但正是这些遗憾和错过，才构成了我们独一无二的人生。不要害怕失去，因为有些东西，注定不属于你。学会放下，才能走得更远。')">查看全文</button>
+                <button class="btn btn-outline" onclick="copyText(this)">复制</button>
+            </div>
+        </article>
+    </div>
+
+    <!-- Usage Guide -->
+    <section class="guide-section" id="guide">
+        <h2 class="guide-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            喊麦词使用指南
+        </h2>
+        <div class="guide-grid">
+            <div class="guide-item">
+                <h3>1. 节奏把控</h3>
+                <p>喊麦的核心在于节奏感。选择文案时，注意句子的长短和韵脚的安排，确保能够配合鼓点或伴奏的节拍。</p>
+            </div>
+            <div class="guide-item">
+                <h3>2. 情感投入</h3>
+                <p>文字只是载体，情感才是灵魂。在朗读时，要代入文案中描述的情绪，无论是愤怒、悲伤还是豪迈，都要表现得淋漓尽致。</p>
+            </div>
+            <div class="guide-item">
+                <h3>3. 场景适配</h3>
+                <p>不同的文案适合不同的直播场景。霸气类文案适合PK或展示实力，情感类文案适合深夜聊天或互动。</p>
+            </div>
+            <div class="guide-item">
+                <h3>4. 适度原则</h3>
+                <p>使用粗口喊麦词时，请遵守平台规则，注意语言尺度，避免因违规内容导致账号受限。</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 喊麦词库网. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; color: #7f8c8d;">本站收录内容仅供娱乐参考，请勿用于非法用途。</p>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h2 class="modal-title" id="modalTitle">标题</h2>
+        <div class="lyrics-meta">
+            <span>字数: <span id="charCount">0</span></span>
+            <span>分类: <span id="modalCategory">通用</span></span>
+        </div>
+        <div class="lyrics-content" id="modalContent">
+            内容...
+        </div>
+        <div style="margin-top: 20px; text-align: right;">
+            <button class="btn btn-primary" onclick="closeModal()">关闭</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Filter Logic
+    function filterContent(category) {
+        const cards = document.querySelectorAll('.card');
+        const buttons = document.querySelectorAll('.filter-btn');
+        
+        // Update active button state
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+
+        // Filter cards
+        cards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Modal Logic
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const charCount = document.getElementById('charCount');
+    const modalCategory = document.getElementById('modalCategory');
+
+    function openModal(title, content) {
+        modalTitle.textContent = title;
+        modalContent.textContent = content;
+        charCount.textContent = content.length;
+        modalOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeModal() {
+        modalOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Close modal when clicking outside
+    modalOverlay.addEventListener('click', function(e) {
+        if (e.target === modalOverlay) {
+            closeModal();
+        }
+    });
+
+    // Copy Text Logic
+    function copyText(btn) {
+        // Find the parent card and get the content from the button's onclick attribute
+        const card = btn.closest('.card');
+        const content = card.querySelector('.card-actions .btn-primary').getAttribute('onclick');
+        // Extract text between single quotes (simple parsing)
+        const textMatch = content.match(/'([^']+)'/);
+        const textToCopy = textMatch ? textMatch[1] : '';
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            const originalText = btn.textContent;
+            btn.textContent = '已复制';
+            btn.style.background = '#2ecc71';
+            btn.style.color = 'white';
+            btn.style.borderColor = '#2ecc71';
+            
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.style.color = '';
+                btn.style.borderColor = '';
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    }
+</script>
+
+</body>
+</html>
