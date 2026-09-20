@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妻子和小三的较量-情感博弈与婚姻生存智慧</title>
+    <meta name="description" content="深度解析妻子与小三之间的心理博弈与情感较量，提供婚姻危机应对策略、情感挽回指南及关系处理智慧。">
+    <meta name="keywords" content="妻子和小三的较量,情感博弈,婚姻危机,情感挽回,情感咨询">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B4513; /* 赭石色，代表婚姻与厚重 */
+            --accent-color: #D2691E;  /* 巧克力色，代表冲突与张力 */
+            --bg-color: #F9F5F0;      /* 米色纸张质感 */
+            --text-main: #333333;
+            --text-light: #666666;
+            --white: #FFFFFF;
+            --card-shadow: 0 4px 12px rgba(139, 69, 19, 0.08);
+            --border-radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 14px;
+            color: var(--text-light);
+            font-weight: normal;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .header-cta:hover {
+            background-color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: rgba(139, 69, 19, 0.1);
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        /* Strategy Section */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .strategy-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s;
+            border-top: 4px solid transparent;
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--accent-color);
+        }
+
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .strategy-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .strategy-card p {
+            font-size: 15px;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        /* Insight Section */
+        .insight-section {
+            background-color: #fff;
+            padding: 60px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .insight-layout {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .insight-content {
+            flex: 1;
+        }
+
+        .insight-visual {
+            flex: 1;
+            background-color: #f4f1ea;
+            height: 400px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .insight-visual::before {
+            content: '心理博弈';
+            font-size: 40px;
+            font-weight: bold;
+            color: rgba(139, 69, 19, 0.1);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .insight-list li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .insight-list li::before {
+            content: '•';
+            color: var(--accent-color);
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+
+        .insight-list strong {
+            color: var(--text-main);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .insight-list span {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+            color: var(--accent-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+            color: var(--text-light);
+            font-size: 15px;
+            background-color: #fafafa;
+        }
+
+        .faq-item.active .faq-answer {
+            padding-bottom: 20px;
+            max-height: 300px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #aaa;
+            padding: 60px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .insight-layout {
+                flex-direction: column;
+            }
+
+            .insight-visual {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">情感博弈 <span>情感智慧与婚姻策略</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">心理分析</a></li>
+                    <li><a href="#">应对策略</a></li>
+                    <li><a href="#">咨询案例</a></li>
+                    <li><a href="#">情感课堂</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header-cta">获取情感诊断</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>妻子和小三的较量</h1>
+                <p>深度解析婚姻危机中的心理博弈，掌握应对策略，在情感较量中重夺主动权。</p>
+                <div class="tags">
+                    <span class="tag">情感挽回</span>
+                    <span class="tag">婚姻经营</span>
+                    <span class="tag">心理博弈</span>
+                    <span class="tag">危机公关</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Strategies -->
+        <section class="container">
+            <div class="section-title">
+                <h2>核心应对策略</h2>
+                <p>面对复杂的情感局势，理性的策略比情绪化的反应更有效</p>
+            </div>
+            <div class="strategy-grid">
+                <article class="strategy-card">
+                    <span class="card-icon">🧠</span>
+                    <h3>情绪稳定是第一战场</h3>
+                    <p>在妻子和小三的较量中，情绪失控往往导致被动。保持冷静、不歇斯底里，不仅能让对方感到压力，还能展现出你作为家庭核心的掌控力。冷静的沟通比激烈的争吵更能瓦解对方的攻势。</p>
+                </article>
+                <article class="strategy-card">
+                    <span class="card-icon">⚖️</span>
+                    <h3>确立家庭核心地位</h3>
+                    <p>重建家庭秩序是关键。通过家庭会议、共同决策等方式，向妻子和小三双方传递一个明确的信号：家庭利益高于一切。当家庭凝聚力增强时，外部的情感诱惑自然会减弱。</p>
+                </article>
+                <article class="strategy-card">
+                    <span class="card-icon">🛡️</span>
+                    <h3>防御与反击并重</h3>
+                    <p>单纯的忍耐无法解决问题。在保护好妻子感受的同时，需要建立合理的边界。对于过度的干扰，既要保持礼貌的疏离，也要在必要时通过法律或社会关系进行适当的压力施压。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Deep Insight -->
+        <section class="insight-section">
+            <div class="container insight-layout">
+                <div class="insight-content">
+                    <h2>深层心理博弈解析</h2>
+                    <p style="margin-bottom: 20px; color: #666;">理解双方的动机与心理机制，是制定战术的前提。</p>
+                    <ul class="insight-list">
+                        <li>
+                            <strong>妻子的心理：从愤怒到绝望</strong>
+                            <span>妻子在初期往往表现出愤怒和攻击性，这是为了宣泄痛苦。随着时间推移，如果得不到有效回应，愤怒会转化为冷漠和自我封闭。理解这一转变，有助于在关键节点给予正确的情感支持。</span>
+                        </li>
+                        <li>
+                            <strong>小三的心理：征服欲与不确定性</strong>
+                            <span>小三的介入往往源于对婚姻的窥探欲或对自身魅力的确认。当妻子展现出强硬立场时，小三的心理防线容易崩溃。利用这一点，可以通过正当途径（如曝光、舆论压力）增加其心理负担。</span>
+                        </li>
+                        <li>
+                            <strong>第三者的角色定位</strong>
+                            <span>无论局势如何变化，都要明确第三者的“入侵者”属性。不要试图与其建立“朋友”关系，这只会模糊边界，给妻子带来二次伤害。</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="insight-visual">
+                    <!-- Visual representation of psychological battle -->
+                    <div style="text-align: center; z-index: 2;">
+                        <h3 style="color: var(--primary-color);">博弈模型</h3>
+                        <p style="font-size: 14px; margin-top: 10px;">理性 vs 情绪<br>防御 vs 攻击</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="section-title">
+                <h2>常见问题解答</h2>
+                <p>针对妻子和小三较量中常见的困惑与误区</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">妻子是否应该直接与小三对峙？</div>
+                <div class="faq-answer">
+                    不建议。直接对峙往往会让妻子处于劣势，甚至引发肢体冲突，让第三方渔翁得利。正确的做法是让妻子掌握主动权，由第三方感受到来自家庭权威的压力，而不是来自妻子的个人纠缠。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">如何判断妻子已经对婚姻彻底死心？</div>
+                <div class="faq-answer">
+                    当妻子不再争吵，对你的关心表现出麻木，且开始规划离婚财产或孩子抚养问题时，说明她的情感防御机制已经关闭。此时应立即停止无效的讨好，转而通过实际行动修复信任。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">小三提出分手，妻子应该原谅丈夫吗？</div>
+                <div class="faq-answer">
+                    原谅与否取决于丈夫的后续表现。这不应成为妻子立刻回到原点的理由。必须建立在丈夫彻底断绝关系、公开透明以及接受专业婚姻咨询的前提下，才能考虑修复关系。
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">情感智慧理念</a></li>
+                        <li><a href="#">专家团队</a></li>
+                        <li><a href="#">服务流程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>内容专区</h4>
+                    <ul>
+                        <li><a href="#">婚姻危机应对</a></li>
+                        <li><a href="#">情感挽回案例</a></li>
+                        <li><a href="#">女性心理成长</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>邮箱：support@emotional-strategy.com</li>
+                        <li>电话：400-123-4567</li>
+                        <li>工作时间：9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 情感博弈与婚姻生存智慧网. All Rights Reserved.</p>
+                <p style="font-size: 12px; margin-top: 5px; color: #666;">本文内容仅供参考，不构成法律或医疗建议。情感问题请寻求专业帮助。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的 FAQ 交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // 关闭其他已打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
